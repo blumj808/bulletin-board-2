@@ -10,11 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_26_001040) do
+ActiveRecord::Schema[7.0].define(version: 2023_11_26_010606) do
   create_table "boards", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "User_id"
   end
 
   create_table "posts", force: :cascade do |t|
